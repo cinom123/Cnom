@@ -1,0 +1,95 @@
+/* Reset default margins/paddings for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall page settings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E0E0E0; /* Set background color to light gray */
+    color: #333333; /* Set text color to dark gray */
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #E0E0E0; /* Ensure the header background matches the body */
+    color: #333333; /* Text color */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect for the header */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #555555;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 15px; /* Add some padding around the about-us section */
+    background-color: #E0E0E0; /* Keep matching background color */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05); /* Light shadow effect to differentiate the about-us section */
+}
+
+.about-us .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 90%;
+    margin: 0 auto;
+}

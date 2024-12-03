@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E0E0E0;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #E0E0E0; /* Match header background color */
+    box-shadow: none; /* Remove any shadow to avoid interrupting design */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the header */
+}
+
+header .brand h1 {
+    font-size: 32px; /* Slightly bigger */
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px; /* Adjust spacing between menu items */
+    list-style-type: none; /* Remove bullets */
+}
+
+nav ul li a {
+    font-size: 16px; /* Slightly bigger font size for the menu items */
+    color: #333;
+    font-weight: 500;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h2 {
+    font-size: 30px;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.blog-posts h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post {
+    margin-bottom: 30px; /* More spacing between posts */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.post-footer {
+    font-size: 14px;
+    color: #777;
+}
+
+.view-all {
+    display: block;
+    width: fit-content;
+    margin: 30px auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners */
+    text-transform: uppercase;
+    text-decoration: none; /* Remove underline */
+}
+
+.view-all:hover {
+    background-color: #ff6600;
+}
+
+/* Categories Section */
+.categories {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.categories h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -10px; /* Adjust title position */
+}
+
+.categories ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none; /* Remove dots between categories */
+}
+
+.category {
+    background-color: #f5f5f5;
+    padding: 30px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    cursor: pointer;
+    box-shadow: none; /* No box-shadow or border that would interrupt the design */
+}
+
+.category:hover {
+    transform: scale(1.1); /* Smooth scaling animation */
+    font-size: 22px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.faq h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 25px; /* Rounded input field */
+}
+
+footer form button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+}
+
+footer form button:hover {
+    background-color: #e55a00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories ul {
+        flex-direction: column; /* Stack categories vertically on small screens */
+        gap: 10px;
+    }
+
+    .post {
+        margin-bottom: 20px; /* Reduce spacing between posts on smaller screens */
+    }
+}
+/* Style the link inside the Cinom title */
+header h1 a {
+    color: #333333;  /* Keeps the Cinom title color the same */
+    text-decoration: none;  /* Removes underline from the link */
+}
